@@ -29,7 +29,7 @@ app.use('/api/tareas/',require('./routes/tareas'));
 //2,-configuramos el puerto dependiendo si está en despliegue o en local
 const port = process.env.port || 4000;
 
-//3.-funcion de arranque de nuestro servidor se le pasa el 0.0.0.0 para que reconosca cualquier url
+//3.-funcion de arranque de nuestro servidor se le pasa el 0.0.0.0 para que reconosca cualquier url asi es
 app.listen(port,'0.0.0.0', ()=>{
     console.log(`El servidor esta corriendo en el puerto ${port}`);
 })
